@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Jorge Flores Portfolio
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+              rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+          rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header class="bg-primary bg-gradient">
+            <div class="container">
+            <div class="row">
+            <div class="col">
+                <h1><strong>Jorge Flores</strong></h1>
+                <h2>Software Engineer</h2>
+            </div>
+            </div>
+            </div>
+        </header>
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul id="navMenu" class="navbar-nav">
+            </ul>
+
+            <a id="resume"
+               class="btn btn-primary ms-lg-auto"
+               href="Jorge_Flores_Resume.pdf">
+                Download Jorge Flores Resume
+            </a>
+            <span id="downloadCount" class="ms-3">
+            Downloads: 0
+            </span>
+
+             </div>
+            </div>
+        </nav>
+       
+    <main class="container my-5">
+        <p id="greeting" class="lead text-center"></p>
+
+        <div class="row">
+            <div class="col-12">
+                <p id="summary" class="lead text-center">
+                    My name is Jorge Flores, I am majoring in software engineering
+                    and I come from San Luis Arizona. I'm currently a sophomore at
+                    Northern Arizona University and my favorite interest is soccer.
+                </p>
+            </div>
+        </div>
+
+        <section id="skills" class="my-5">
+            <h3 class="text-center mb-4">Skills</h3>
+
+         <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Programming Languages</h4>
+                        <ul id="skillsList" class="card-text">
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>C</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Web Technologies</h4>
+                            <ul class="card-text">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                     </div>
+                 </div>
+
+                </div>
+                <div class="mt-4">
+                <h4>Add a New Skill</h4>
+
+                <form id="skillForm">
+                <input type="text"
+                id="skillInput"
+                class="form-control mb-2"
+                placeholder="Enter a skill">
+
+                <button type="submit"
+                id="addSkillButton"
+                class="btn btn-primary">
+                Add Skill
+                </button>
+                </form>
+
+                <h4 class="mt-4">Search Skills</h4>
+
+                <input type="text"
+                id="skillSearch"
+                class="form-control mb-2"
+                placeholder="Search for a skill">
+                </div>
+            </section>
+
+           <section id="projects" class="my-5">
+            <h3 class="text-center mb-4">Projects</h3>
+
+            <div class="text-center mb-4">
+            <button id="sortProjects" class="btn btn-primary">
+            Sort Projects by Deadline
+            </button>
+            </div>
+
+            <div id="projectList" class="row g-4">
+            </div>
+            </section>
+
+            <section id="education" class="my-5">
+            <h3 class="text-center mb-4">Education and Experience</h3>
+
+            <h4>Education</h4>
+            <div id="educationTable" class="table-responsive mb-4">
+            </div>
+
+            <h4>Work Experience</h4>
+            <div id="experienceTable" class="table-responsive">
+            </div>
+            </section>
+
+    </main>
+
+        <footer class="bg-primary bg-gradient">
+            <div class="container">
+            <div class="row">
+            <div class="col-12 text-center">
+                <h3 id="contact">Contact Information</h3>
+
+                <ul class="list-unstyled">
+                    <li>
+                        Email:
+                        <a href="mailto:jorgefloresriv22@gmail.com">
+                            jorgefloresriv22@gmail.com
+                        </a>
+                    </li>
+
+                    <li>
+                        Phone:
+                        <a href="tel:928-323-7974">
+                            (928) 323-7974
+                        </a>
+                    </li>
+
+                    <li>
+                        GitHub:
+                        <a href="https://github.com/JFlores1234">
+                            GitHub Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
